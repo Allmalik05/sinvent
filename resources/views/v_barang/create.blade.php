@@ -23,7 +23,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">MERK</label>
-                                <input type="text" class="form-control @error('merk') is-invalid @enderror" name="merk" value="{{ old('merk') }}" placeholder="Masukkan Merk">
+                                <input type="text" class="form-control @error('merk') is-invalid @enderror" name="merk" value="{{ old('merk') }}" placeholder="Masukkan merk">
                             
                                 <!-- error message untuk merk -->
                                 @error('merk')
@@ -34,7 +34,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">SERI</label>
-                                <input type="text" class="form-control @error('seri') is-invalid @enderror" name="seri" value="{{ old('seri') }}" placeholder="Masukkan Seri">
+                                <input type="text" class="form-control @error('seri') is-invalid @enderror" name="seri" value="{{ old('seri') }}" placeholder="Masukkan seri">
                             
                                 <!-- error message untuk seri -->
                                 @error('seri')
@@ -45,7 +45,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">SPESIFIKASI</label>
-                                <input type="text" class="form-control @error('spesifikasi') is-invalid @enderror" name="spesifikasi" value="{{ old('spesifikasi') }}" placeholder="Masukkan Merk">
+                                <input type="text" class="form-control @error('spesifikasi') is-invalid @enderror" name="spesifikasi" value="{{ old('spesifikasi') }}" placeholder="Masukkan spesifikasi">
                             
                                 <!-- error message untuk spesifikasi -->
                                 @error('spesifikasi')
