@@ -12,13 +12,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('barang', BarangController::class);
+Route::resource('barang', BarangController::class)->middleware('auth');
 
-Route::resource('kategori', KategoriController::class);
+Route::resource('kategori', KategoriController::class)->middleware('auth');
 
-Route::resource('barangmasuk', BarangmasukController::class)->middleware('auth');;
+Route::resource('barangmasuk', BarangmasukController::class)->middleware('auth');
 
-Route::resource('barangkeluar', BarangkeluarController::class)->middleware('auth');;
+Route::resource('barangkeluar', BarangkeluarController::class)->middleware('auth');
 
 // ROUTE LOGIN
 Route::get('login', [LoginController::class,'index'])->name('login')->middleware('guest');
