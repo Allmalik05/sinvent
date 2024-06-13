@@ -139,7 +139,7 @@ class KategoriController extends Controller
     {
         // validasi jika record kategori dipakai di barang, error
         if (DB::table('barang')->where('kategori_id', $id)->exists()){
-            return redirect()->route('kategori.index')->with(['error' => 'Data Gagal Dihapus!']);
+            return redirect()->route('kategori.index')->with(['error' => 'Data gagal dihapus, kategori digunakan oleh barang.']);
         } else {
             $rsetKategori = Kategori::find($id);
             $rsetKategori->delete();
